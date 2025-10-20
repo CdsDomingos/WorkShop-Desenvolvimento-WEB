@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastrar Nova Tarefa</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        form { max-width: 400px; padding: 20px; border: 1px solid #ccc; border-radius: 8px; }
+        div { margin-bottom: 15px; }
+        label { display: block; margin-bottom: 5px; font-weight: bold; }
+        input[type="text"], input[type="date"] {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box; /* Garante que o padding não estoure a largura */
+        }
+        button { padding: 10px 15px; background-color: #007bff; color: white; border: none; border-radius: 4px; cursor: pointer; }
+    </style>
+</head>
+<body>
+
+<h1>Nova Tarefa</h1>
+
+    <form method="POST" action="/criar">
+
+    <div>
+        <label for="titulo">Título:</label>
+        <input type="text" id="titulo" name="titulo" placeholder="Título da tarefa" required>
+    </div>
+
+    <div>
+        <label for="dataDeEntrega">Data de Entrega:</label>
+        <input type="date" id="dataDeEntrega" name="dataDeEntrega" required>
+    </div>
+
+    <div>
+        <button type="submit">Cadastrar</button>
+    </div>
+
+</form>
+
+</body>
+</html>
