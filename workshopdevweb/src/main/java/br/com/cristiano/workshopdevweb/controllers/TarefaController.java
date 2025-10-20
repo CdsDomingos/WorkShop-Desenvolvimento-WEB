@@ -17,6 +17,11 @@ public class TarefaController {
     @Autowired
     private TarefaService tarefaService;
 
+    @GetMapping("/")
+    public String home(){
+        return "home";
+    }
+
     @GetMapping("/criar")
     public String criar(){
         return "criar";

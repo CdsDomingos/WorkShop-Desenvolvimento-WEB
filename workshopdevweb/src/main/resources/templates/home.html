@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Home - Gestor de Tarefas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f4;
+            text-align: center; /* Centraliza tudo */
+        }
+        .container {
+            max-width: 500px;
+            margin: 50px auto; /* Centraliza a caixa */
+            padding: 30px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #333;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+        }
+        .menu {
+            list-style-type: none;
+            padding: 0;
+            margin-top: 20px;
+        }
+        .menu li {
+            margin: 15px 0; /* Espaçamento entre os botões */
+        }
+        /* Estilo dos links para parecerem botões grandes */
+        .menu li a {
+            display: block;
+            padding: 15px 20px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1.2em;
+            transition: background-color 0.3s; /* Efeito suave */
+        }
+        .menu li a:hover {
+            background-color: #0056b3; /* Cor mais escura ao passar o mouse */
+        }
+
+        /* Cor diferente para o botão de criar */
+        .menu li a.btn-criar {
+            background-color: #28a745;
+        }
+        .menu li a.btn-criar:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Gestor de Tarefas</h1>
+
+    <ul class="menu">
+        <li>
+            <a href="/listaTarefa">Ver Minhas Tarefas</a>
+        </li>
+        <li>
+            <a href="/criar" class="btn-criar">Criar Nova Tarefa</a>
+        </li>
+    </ul>
+</div>
+
+</body>
+</html>

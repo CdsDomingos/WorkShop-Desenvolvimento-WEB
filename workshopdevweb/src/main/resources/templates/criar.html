@@ -5,22 +5,54 @@
     <title>Cadastrar Nova Tarefa</title>
     <style>
         body { font-family: Arial, sans-serif; margin: 20px; }
+
+        .navbar {
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid #eee;
+        }
+        .btn-nav {
+            padding: 10px 15px;
+            background-color: #6c757d; /* Um cinza neutro */
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            margin-right: 10px; /* Espaço entre os botões */
+            font-size: 0.9em;
+        }
+        .btn-nav:hover {
+            background-color: #5a6268;
+        }
+
         form { max-width: 400px; padding: 20px; border: 1px solid #ccc; border-radius: 8px; }
         div { margin-bottom: 15px; }
         label { display: block; margin-bottom: 5px; font-weight: bold; }
         input[type="text"], input[type="date"] {
             width: 100%;
             padding: 8px;
-            box-sizing: border-box; /* Garante que o padding não estoure a largura */
+            box-sizing: border-box;
         }
-        button { padding: 10px 15px; background-color: #007bff; color: white; border: none; border-radius: 4px; cursor: pointer; }
+        button {
+            padding: 10px 15px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
     </style>
 </head>
 <body>
 
+<div class="navbar">
+    <a href="/" class="btn-nav">&larr; Voltar ao Menu</a>
+
+    <a href="/listaTarefa" class="btn-nav">Ver Listas de Tarefas</a>
+</div>
+
 <h1>Nova Tarefa</h1>
 
-    <form method="POST" action="/criar">
+<form method="POST" action="/criar">
 
     <div>
         <label for="titulo">Título:</label>
